@@ -1,0 +1,13 @@
+{
+    "name": "voboghure/php-mvc-core",
+    "description": "At the heart of the framework is the MVC pattern, which separates the application logic into three distinct components: the Model, the View, and the Controller.",
+    "type": "library",
+    "license": "GNU GPL v3",
+    "authors": [
+        {
+            "name": "Tapan Kumer Das",
+            "email": "voboghure.dev@gmail.com"
+        }
+    ],
+    "require": {}
+}
