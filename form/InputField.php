@@ -1,7 +1,7 @@
 <?php
-namespace app\core\form;
+namespace voboghure\phpmvc\form;
 
-use app\core\Model;
+use voboghure\phpmvc\Model;
 
 class InputField extends BaseField {
 	public const TYPE_TEXT     = 'text';

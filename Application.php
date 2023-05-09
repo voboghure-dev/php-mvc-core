@@ -1,7 +1,7 @@
 <?php
-namespace app\core;
+namespace voboghure\phpmvc;
 
-use app\core\db\Database;
+use voboghure\phpmvc\db\Database;
 
 class Application {
 	public static string $ROOT_PATH;

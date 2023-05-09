@@ -1,7 +1,7 @@
 <?php
-namespace app\core;
+namespace voboghure\phpmvc;
 
-use app\core\exceptions\NotFoundException;
+use voboghure\phpmvc\exceptions\NotFoundException;
 
 class Router {
 	public Request $request;

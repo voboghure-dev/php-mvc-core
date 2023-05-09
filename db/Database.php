@@ -1,7 +1,7 @@
 <?php
-namespace app\core\db;
+namespace voboghure\phpmvc\db;
 
-use app\core\Application;
+use voboghure\phpmvc\Application;
 use PDO;
 
 class Database {

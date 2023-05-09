@@ -1,5 +1,5 @@
 <?php
-namespace app\core;
+namespace voboghure\phpmvc;
 
 class View {
 	public string $title = '';

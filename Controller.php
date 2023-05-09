@@ -1,7 +1,7 @@
 <?php
-namespace app\core;
+namespace voboghure\phpmvc;
 
-use app\core\middlewares\BaseMiddleware;
+use voboghure\phpmvc\middlewares\BaseMiddleware;
 
 class Controller {
 	public string $layout = 'main';

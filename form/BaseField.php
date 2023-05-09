@@ -1,7 +1,7 @@
 <?php
-namespace app\core\form;
+namespace voboghure\phpmvc\form;
 
-use app\core\Model;
+use voboghure\phpmvc\Model;
 
 abstract class BaseField {
 	public Model $model;

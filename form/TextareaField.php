@@ -1,5 +1,5 @@
 <?php
-namespace app\core\form;
+namespace voboghure\phpmvc\form;
 
 class TextareaField extends BaseField {
 

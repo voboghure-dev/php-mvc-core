@@ -1,7 +1,7 @@
 <?php
-namespace app\core;
+namespace voboghure\phpmvc;
 
-use app\core\db\DbModel;
+use voboghure\phpmvc\db\DbModel;
 
 abstract class UserModel extends DbModel {
 	abstract public function getDisplayName(): string;

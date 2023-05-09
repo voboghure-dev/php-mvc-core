@@ -1,8 +1,8 @@
 <?php
-namespace app\core\db;
+namespace voboghure\phpmvc\db;
 
-use app\core\Application;
-use app\core\Model;
+use voboghure\phpmvc\Application;
+use voboghure\phpmvc\Model;
 
 abstract class DbModel extends Model {
 	abstract public static function tableName(): string;

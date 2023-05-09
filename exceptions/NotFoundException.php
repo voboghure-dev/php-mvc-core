@@ -1,5 +1,5 @@
 <?php
-namespace app\core\exceptions;
+namespace voboghure\phpmvc\exceptions;
 
 class NotFoundException extends \Exception {
 	protected $message = 'Page not found';

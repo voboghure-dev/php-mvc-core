@@ -1,5 +1,5 @@
 <?php
-namespace app\core;
+namespace voboghure\phpmvc;
 
 abstract class Model {
 	public const RULE_REQUIRED = 'required';

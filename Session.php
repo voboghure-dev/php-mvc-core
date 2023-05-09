@@ -1,5 +1,5 @@
 <?php
-namespace app\core;
+namespace voboghure\phpmvc;
 
 class Session {
 	protected const FLASH_KEY = 'flash_messages';
