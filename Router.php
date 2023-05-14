@@ -22,7 +22,14 @@ class Router {
 	}
 
 	public function resolve() {
-		$path     = $this->request->getPath();
+		$args = [ $this->request, $this->response ];
+		$path   = $this->request->getPath();
+		$params = explode( '/', trim( $path, '/' ) );
+		if (  ! empty( $params ) ) {
+			$path = '/' . $params[0]; // Append the / in callback
+			array_shift( $params ); // remove first element as its the callback
+			$args = array_merge($args, $params);
+		}
 		$method   = $this->request->method();
 		$callback = $this->routes[$method][$path] ?? false;
 		if ( $callback === false ) {
@@ -43,7 +50,7 @@ class Router {
 			}
 		}
 
-		return call_user_func( $callback, $this->request, $this->response );
+		return call_user_func_array( $callback, $args );
 	}
 
 }
