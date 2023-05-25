@@ -18,8 +18,8 @@ class Application {
 	public  ? Controller $controller = null;
 	public  ? UserModel $user;
 	public View $view;
-	public string $userClass;
-	public string $layout = 'main';
+	public  ? string $userClass = null;
+	public string $layout       = 'main';
 
 	public function __construct( $rootPath, array $config ) {
 		self::$ROOT_PATH = $rootPath;
@@ -30,7 +30,7 @@ class Application {
 		$this->router    = new Router( $this->request, $this->response );
 		$this->db        = new Database( $config['db'] );
 		$this->view      = new View();
-		$this->userClass = $config['userClass'];
+		$this->userClass = $config['userClass'] ?? null;
 
 		$primaryValue = $this->session->get( 'user' );
 		if ( $primaryValue ) {
